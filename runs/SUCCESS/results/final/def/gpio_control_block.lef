@@ -1,0 +1,680 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gpio_control_block
+  CLASS BLOCK ;
+  FOREIGN gpio_control_block ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 170.000 BY 85.000 ;
+  PIN gpio_defaults[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.690 81.000 4.970 85.000 ;
+    END
+  END gpio_defaults[0]
+  PIN gpio_defaults[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.690 81.000 27.970 85.000 ;
+    END
+  END gpio_defaults[10]
+  PIN gpio_defaults[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.990 81.000 30.270 85.000 ;
+    END
+  END gpio_defaults[11]
+  PIN gpio_defaults[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 81.000 32.570 85.000 ;
+    END
+  END gpio_defaults[12]
+  PIN gpio_defaults[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.990 81.000 7.270 85.000 ;
+    END
+  END gpio_defaults[1]
+  PIN gpio_defaults[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.290 81.000 9.570 85.000 ;
+    END
+  END gpio_defaults[2]
+  PIN gpio_defaults[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 11.590 81.000 11.870 85.000 ;
+    END
+  END gpio_defaults[3]
+  PIN gpio_defaults[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 81.000 14.170 85.000 ;
+    END
+  END gpio_defaults[4]
+  PIN gpio_defaults[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 81.000 16.470 85.000 ;
+    END
+  END gpio_defaults[5]
+  PIN gpio_defaults[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.490 81.000 18.770 85.000 ;
+    END
+  END gpio_defaults[6]
+  PIN gpio_defaults[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 20.790 81.000 21.070 85.000 ;
+    END
+  END gpio_defaults[7]
+  PIN gpio_defaults[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 81.000 23.370 85.000 ;
+    END
+  END gpio_defaults[8]
+  PIN gpio_defaults[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.390 81.000 25.670 85.000 ;
+    END
+  END gpio_defaults[9]
+  PIN mgmt_gpio_in
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 24.520 170.000 25.120 ;
+    END
+  END mgmt_gpio_in
+  PIN mgmt_gpio_oeb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 28.600 170.000 29.200 ;
+    END
+  END mgmt_gpio_oeb
+  PIN mgmt_gpio_out
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 30.640 170.000 31.240 ;
+    END
+  END mgmt_gpio_out
+  PIN one
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 26.560 170.000 27.160 ;
+    END
+  END one
+  PIN pad_gpio_ana_en
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 32.680 170.000 33.280 ;
+    END
+  END pad_gpio_ana_en
+  PIN pad_gpio_ana_pol
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 34.720 170.000 35.320 ;
+    END
+  END pad_gpio_ana_pol
+  PIN pad_gpio_ana_sel
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 36.760 170.000 37.360 ;
+    END
+  END pad_gpio_ana_sel
+  PIN pad_gpio_dm[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 38.800 170.000 39.400 ;
+    END
+  END pad_gpio_dm[0]
+  PIN pad_gpio_dm[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 40.840 170.000 41.440 ;
+    END
+  END pad_gpio_dm[1]
+  PIN pad_gpio_dm[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 42.880 170.000 43.480 ;
+    END
+  END pad_gpio_dm[2]
+  PIN pad_gpio_holdover
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 44.920 170.000 45.520 ;
+    END
+  END pad_gpio_holdover
+  PIN pad_gpio_ib_mode_sel
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 46.960 170.000 47.560 ;
+    END
+  END pad_gpio_ib_mode_sel
+  PIN pad_gpio_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 49.000 170.000 49.600 ;
+    END
+  END pad_gpio_in
+  PIN pad_gpio_inenb
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 51.040 170.000 51.640 ;
+    END
+  END pad_gpio_inenb
+  PIN pad_gpio_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 53.080 170.000 53.680 ;
+    END
+  END pad_gpio_out
+  PIN pad_gpio_outenb
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 55.120 170.000 55.720 ;
+    END
+  END pad_gpio_outenb
+  PIN pad_gpio_slow_sel
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 57.160 170.000 57.760 ;
+    END
+  END pad_gpio_slow_sel
+  PIN pad_gpio_vtrip_sel
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 59.200 170.000 59.800 ;
+    END
+  END pad_gpio_vtrip_sel
+  PIN resetn
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 61.240 170.000 61.840 ;
+    END
+  END resetn
+  PIN resetn_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 63.280 170.000 63.880 ;
+    END
+  END resetn_out
+  PIN serial_clock
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 65.320 170.000 65.920 ;
+    END
+  END serial_clock
+  PIN serial_clock_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 67.360 170.000 67.960 ;
+    END
+  END serial_clock_out
+  PIN serial_data_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 69.400 170.000 70.000 ;
+    END
+  END serial_data_in
+  PIN serial_data_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 71.440 170.000 72.040 ;
+    END
+  END serial_data_out
+  PIN serial_load
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 73.480 170.000 74.080 ;
+    END
+  END serial_load
+  PIN serial_load_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 75.520 170.000 76.120 ;
+    END
+  END serial_load_out
+  PIN user_gpio_in
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 77.560 170.000 78.160 ;
+    END
+  END user_gpio_in
+  PIN user_gpio_oeb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 79.600 170.000 80.200 ;
+    END
+  END user_gpio_oeb
+  PIN user_gpio_out
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 81.640 170.000 82.240 ;
+    END
+  END user_gpio_out
+  PIN vccd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 12.800 24.465 14.400 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 37.800 4.640 39.400 79.120 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 4.640 49.460 6.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 24.640 49.460 26.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 44.640 49.460 46.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 64.640 49.460 66.240 ;
+    END
+  END vccd
+  PIN vccd1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 22.800 5.200 24.400 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 47.800 5.200 49.400 79.120 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 14.640 49.460 16.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 34.640 49.460 36.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 54.640 49.460 56.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 74.640 49.460 76.240 ;
+    END
+  END vccd1
+  PIN vssd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 17.800 5.200 19.400 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 42.800 5.200 44.400 79.120 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 9.640 49.460 11.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 29.640 49.460 31.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 49.640 49.460 51.240 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 69.640 49.460 71.240 ;
+    END
+  END vssd
+  PIN vssd1
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 27.800 5.200 29.400 79.120 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 4.360 19.640 49.460 21.240 ;
+    END
+  END vssd1
+  PIN zero
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 70.000 22.480 170.000 23.080 ;
+    END
+  END zero
+  OBS
+      LAYER li1 ;
+        RECT 0.000 78.965 169.810 85.000 ;
+        RECT 0.000 78.795 4.745 78.965 ;
+      LAYER li1 ;
+        RECT 4.745 78.795 169.810 78.965 ;
+      LAYER li1 ;
+        RECT 0.000 77.410 169.810 78.795 ;
+        RECT 0.000 77.405 35.045 77.410 ;
+      LAYER li1 ;
+        RECT 35.045 77.405 169.810 77.410 ;
+      LAYER li1 ;
+        RECT 0.000 30.025 4.265 77.405 ;
+      LAYER li1 ;
+        RECT 4.265 30.025 169.810 77.405 ;
+      LAYER li1 ;
+        RECT 0.000 30.005 16.920 30.025 ;
+      LAYER li1 ;
+        RECT 16.920 30.005 169.810 30.025 ;
+      LAYER li1 ;
+        RECT 0.000 29.835 4.745 30.005 ;
+      LAYER li1 ;
+        RECT 4.745 29.835 169.810 30.005 ;
+      LAYER li1 ;
+        RECT 0.000 28.225 17.395 29.835 ;
+      LAYER li1 ;
+        RECT 17.395 28.225 169.810 29.835 ;
+      LAYER li1 ;
+        RECT 0.000 28.055 16.795 28.225 ;
+      LAYER li1 ;
+        RECT 16.795 28.055 169.810 28.225 ;
+      LAYER li1 ;
+        RECT 0.000 27.285 17.395 28.055 ;
+      LAYER li1 ;
+        RECT 17.395 27.285 169.810 28.055 ;
+      LAYER li1 ;
+        RECT 0.000 27.115 4.745 27.285 ;
+      LAYER li1 ;
+        RECT 4.745 27.115 169.810 27.285 ;
+      LAYER li1 ;
+        RECT 0.000 26.345 19.235 27.115 ;
+      LAYER li1 ;
+        RECT 19.235 26.345 169.810 27.115 ;
+      LAYER li1 ;
+        RECT 0.000 25.825 17.855 26.345 ;
+      LAYER li1 ;
+        RECT 17.855 25.825 169.810 26.345 ;
+      LAYER li1 ;
+        RECT 0.000 25.655 16.795 25.825 ;
+      LAYER li1 ;
+        RECT 16.795 25.655 169.810 25.825 ;
+      LAYER li1 ;
+        RECT 0.000 24.565 19.235 25.655 ;
+      LAYER li1 ;
+        RECT 19.235 24.565 169.810 25.655 ;
+      LAYER li1 ;
+        RECT 0.000 24.395 15.325 24.565 ;
+      LAYER li1 ;
+        RECT 15.325 24.395 169.810 24.565 ;
+      LAYER li1 ;
+        RECT 0.000 21.845 16.795 24.395 ;
+      LAYER li1 ;
+        RECT 16.795 21.845 169.810 24.395 ;
+      LAYER li1 ;
+        RECT 0.000 21.675 15.325 21.845 ;
+      LAYER li1 ;
+        RECT 15.325 21.675 169.810 21.845 ;
+      LAYER li1 ;
+        RECT 0.000 20.925 17.855 21.675 ;
+      LAYER li1 ;
+        RECT 17.855 20.925 169.810 21.675 ;
+      LAYER li1 ;
+        RECT 0.000 20.385 17.165 20.925 ;
+      LAYER li1 ;
+        RECT 17.165 20.385 169.810 20.925 ;
+      LAYER li1 ;
+        RECT 0.000 20.215 16.795 20.385 ;
+      LAYER li1 ;
+        RECT 16.795 20.215 169.810 20.385 ;
+      LAYER li1 ;
+        RECT 0.000 19.125 17.855 20.215 ;
+      LAYER li1 ;
+        RECT 17.855 19.125 169.810 20.215 ;
+      LAYER li1 ;
+        RECT 0.000 18.955 15.325 19.125 ;
+      LAYER li1 ;
+        RECT 15.325 18.955 169.810 19.125 ;
+      LAYER li1 ;
+        RECT 0.000 16.405 16.795 18.955 ;
+      LAYER li1 ;
+        RECT 16.795 16.405 169.810 18.955 ;
+      LAYER li1 ;
+        RECT 0.000 16.235 15.325 16.405 ;
+      LAYER li1 ;
+        RECT 15.325 16.235 169.810 16.405 ;
+      LAYER li1 ;
+        RECT 0.000 13.685 16.795 16.235 ;
+      LAYER li1 ;
+        RECT 16.795 13.685 169.810 16.235 ;
+      LAYER li1 ;
+        RECT 0.000 13.515 15.325 13.685 ;
+      LAYER li1 ;
+        RECT 15.325 13.515 169.810 13.685 ;
+      LAYER li1 ;
+        RECT 0.000 10.965 16.795 13.515 ;
+      LAYER li1 ;
+        RECT 16.795 10.965 169.810 13.515 ;
+      LAYER li1 ;
+        RECT 0.000 10.795 15.325 10.965 ;
+      LAYER li1 ;
+        RECT 15.325 10.795 169.810 10.965 ;
+      LAYER li1 ;
+        RECT 0.000 8.245 16.795 10.795 ;
+      LAYER li1 ;
+        RECT 16.795 8.245 169.810 10.795 ;
+      LAYER li1 ;
+        RECT 0.000 8.075 15.325 8.245 ;
+      LAYER li1 ;
+        RECT 15.325 8.075 169.810 8.245 ;
+      LAYER li1 ;
+        RECT 0.000 5.525 16.795 8.075 ;
+      LAYER li1 ;
+        RECT 16.795 5.525 169.810 8.075 ;
+      LAYER li1 ;
+        RECT 0.000 5.355 15.325 5.525 ;
+      LAYER li1 ;
+        RECT 15.325 5.355 169.810 5.525 ;
+      LAYER li1 ;
+        RECT 0.000 0.000 16.795 5.355 ;
+      LAYER li1 ;
+        RECT 16.795 0.000 169.810 5.355 ;
+      LAYER met1 ;
+        RECT 0.530 0.000 170.000 85.000 ;
+      LAYER met2 ;
+        RECT 0.090 80.720 4.410 85.000 ;
+        RECT 5.250 80.720 6.710 85.000 ;
+        RECT 7.550 80.720 9.010 85.000 ;
+        RECT 9.850 80.720 11.310 85.000 ;
+        RECT 12.150 80.720 13.610 85.000 ;
+        RECT 14.450 80.720 15.910 85.000 ;
+        RECT 16.750 80.720 18.210 85.000 ;
+        RECT 19.050 80.720 20.510 85.000 ;
+        RECT 21.350 80.720 22.810 85.000 ;
+        RECT 23.650 80.720 25.110 85.000 ;
+        RECT 25.950 80.720 27.410 85.000 ;
+        RECT 28.250 80.720 29.710 85.000 ;
+        RECT 30.550 80.720 32.010 85.000 ;
+        RECT 32.850 80.720 170.000 85.000 ;
+        RECT 0.090 0.000 170.000 80.720 ;
+      LAYER met3 ;
+        RECT 0.065 82.640 85.495 84.825 ;
+        RECT 0.065 81.240 69.600 82.640 ;
+        RECT 0.065 80.600 85.495 81.240 ;
+        RECT 0.065 79.200 69.600 80.600 ;
+        RECT 0.065 78.560 85.495 79.200 ;
+        RECT 0.065 77.160 69.600 78.560 ;
+        RECT 0.065 76.520 85.495 77.160 ;
+        RECT 0.065 75.120 69.600 76.520 ;
+        RECT 0.065 74.480 85.495 75.120 ;
+        RECT 0.065 73.080 69.600 74.480 ;
+        RECT 0.065 72.440 85.495 73.080 ;
+        RECT 0.065 71.040 69.600 72.440 ;
+        RECT 0.065 70.400 85.495 71.040 ;
+        RECT 0.065 69.000 69.600 70.400 ;
+        RECT 0.065 68.360 85.495 69.000 ;
+        RECT 0.065 66.960 69.600 68.360 ;
+        RECT 0.065 66.320 85.495 66.960 ;
+        RECT 0.065 64.920 69.600 66.320 ;
+        RECT 0.065 64.280 85.495 64.920 ;
+        RECT 0.065 62.880 69.600 64.280 ;
+        RECT 0.065 62.240 85.495 62.880 ;
+        RECT 0.065 60.840 69.600 62.240 ;
+        RECT 0.065 60.200 85.495 60.840 ;
+        RECT 0.065 58.800 69.600 60.200 ;
+        RECT 0.065 58.160 85.495 58.800 ;
+        RECT 0.065 56.760 69.600 58.160 ;
+        RECT 0.065 56.120 85.495 56.760 ;
+        RECT 0.065 54.720 69.600 56.120 ;
+        RECT 0.065 54.080 85.495 54.720 ;
+        RECT 0.065 52.680 69.600 54.080 ;
+        RECT 0.065 52.040 85.495 52.680 ;
+        RECT 0.065 50.640 69.600 52.040 ;
+        RECT 0.065 50.000 85.495 50.640 ;
+        RECT 0.065 48.600 69.600 50.000 ;
+        RECT 0.065 47.960 85.495 48.600 ;
+        RECT 0.065 46.560 69.600 47.960 ;
+        RECT 0.065 45.920 85.495 46.560 ;
+        RECT 0.065 44.520 69.600 45.920 ;
+        RECT 0.065 43.880 85.495 44.520 ;
+        RECT 0.065 42.480 69.600 43.880 ;
+        RECT 0.065 41.840 85.495 42.480 ;
+        RECT 0.065 40.440 69.600 41.840 ;
+        RECT 0.065 39.800 85.495 40.440 ;
+        RECT 0.065 38.400 69.600 39.800 ;
+        RECT 0.065 37.760 85.495 38.400 ;
+        RECT 0.065 36.360 69.600 37.760 ;
+        RECT 0.065 35.720 85.495 36.360 ;
+        RECT 0.065 34.320 69.600 35.720 ;
+        RECT 0.065 33.680 85.495 34.320 ;
+        RECT 0.065 32.280 69.600 33.680 ;
+        RECT 0.065 31.640 85.495 32.280 ;
+        RECT 0.065 30.240 69.600 31.640 ;
+        RECT 0.065 29.600 85.495 30.240 ;
+        RECT 0.065 28.200 69.600 29.600 ;
+        RECT 0.065 27.560 85.495 28.200 ;
+        RECT 0.065 26.160 69.600 27.560 ;
+        RECT 0.065 25.520 85.495 26.160 ;
+        RECT 0.065 24.120 69.600 25.520 ;
+        RECT 0.065 23.480 85.495 24.120 ;
+        RECT 0.065 22.080 69.600 23.480 ;
+        RECT 0.065 0.855 85.495 22.080 ;
+      LAYER met4 ;
+        RECT 0.295 79.520 170.000 85.000 ;
+        RECT 0.295 24.065 12.400 79.520 ;
+        RECT 14.800 24.065 17.400 79.520 ;
+        RECT 0.295 4.800 17.400 24.065 ;
+        RECT 19.800 4.800 22.400 79.520 ;
+        RECT 24.800 4.800 27.400 79.520 ;
+        RECT 29.800 4.800 37.400 79.520 ;
+        RECT 0.295 4.240 37.400 4.800 ;
+        RECT 39.800 4.800 42.400 79.520 ;
+        RECT 44.800 4.800 47.400 79.520 ;
+        RECT 49.800 4.800 170.000 79.520 ;
+        RECT 39.800 4.240 170.000 4.800 ;
+        RECT 0.295 0.000 170.000 4.240 ;
+      LAYER met5 ;
+        RECT 67.000 0.000 170.000 85.000 ;
+  END
+END gpio_control_block
+END LIBRARY
+

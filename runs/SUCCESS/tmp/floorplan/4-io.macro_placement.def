@@ -1,0 +1,483 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN gpio_control_block ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 170000 85000 ) ;
+ROW ROW_0 unithd 4600 5440 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 4600 8160 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 4600 10880 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 4600 13600 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 4600 16320 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 4600 19040 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 4600 21760 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_7 unithd 4600 24480 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_8 unithd 4600 27200 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_9 unithd 4600 29920 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_10 unithd 4600 32640 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_11 unithd 4600 35360 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_12 unithd 4600 38080 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_13 unithd 4600 40800 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_14 unithd 4600 43520 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_15 unithd 4600 46240 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_16 unithd 4600 48960 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_17 unithd 4600 51680 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_18 unithd 4600 54400 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_19 unithd 4600 57120 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_20 unithd 4600 59840 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_21 unithd 4600 62560 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_22 unithd 4600 65280 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_23 unithd 4600 68000 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_24 unithd 4600 70720 N DO 97 BY 1 STEP 460 0 ;
+ROW ROW_25 unithd 4600 73440 FS DO 97 BY 1 STEP 460 0 ;
+ROW ROW_26 unithd 4600 76160 N DO 97 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 370 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 250 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 500 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 250 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 370 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 185 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 250 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 125 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 185 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 92 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 50 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 25 STEP 3400 LAYER met5 ;
+COMPONENTS 108 ;
+    - _085_ sky130_fd_sc_hd__or2b_2 ;
+    - _086_ sky130_fd_sc_hd__buf_2 ;
+    - _087_ sky130_fd_sc_hd__inv_2 ;
+    - _088_ sky130_fd_sc_hd__and3_2 ;
+    - _089_ sky130_fd_sc_hd__a21o_2 ;
+    - _090_ sky130_fd_sc_hd__nand2_2 ;
+    - _091_ sky130_fd_sc_hd__nor2_2 ;
+    - _092_ sky130_fd_sc_hd__inv_2 ;
+    - _093_ sky130_fd_sc_hd__nand2_2 ;
+    - _094_ sky130_fd_sc_hd__inv_2 ;
+    - _095_ sky130_fd_sc_hd__nand3_2 ;
+    - _096_ sky130_fd_sc_hd__inv_2 ;
+    - _097_ sky130_fd_sc_hd__nand2_2 ;
+    - _098_ sky130_fd_sc_hd__nand3_2 ;
+    - _099_ sky130_fd_sc_hd__nand2_2 ;
+    - _100_ sky130_fd_sc_hd__nand2_2 ;
+    - _101_ sky130_fd_sc_hd__inv_2 ;
+    - _102_ sky130_fd_sc_hd__buf_6 ;
+    - _103_ sky130_fd_sc_hd__or2_4 ;
+    - _104_ sky130_fd_sc_hd__buf_6 ;
+    - _105_ sky130_fd_sc_hd__buf_4 ;
+    - _106_ sky130_fd_sc_hd__inv_2 ;
+    - _107_ sky130_fd_sc_hd__inv_2 ;
+    - _108_ sky130_fd_sc_hd__buf_4 ;
+    - _109_ sky130_fd_sc_hd__nand2_2 ;
+    - _110_ sky130_fd_sc_hd__or2_4 ;
+    - _111_ sky130_fd_sc_hd__buf_6 ;
+    - _112_ sky130_fd_sc_hd__inv_2 ;
+    - _113_ sky130_fd_sc_hd__nand2_2 ;
+    - _114_ sky130_fd_sc_hd__or2_4 ;
+    - _115_ sky130_fd_sc_hd__buf_6 ;
+    - _116_ sky130_fd_sc_hd__inv_2 ;
+    - _117_ sky130_fd_sc_hd__nand2_2 ;
+    - _118_ sky130_fd_sc_hd__or2_4 ;
+    - _119_ sky130_fd_sc_hd__buf_6 ;
+    - _120_ sky130_fd_sc_hd__inv_2 ;
+    - _121_ sky130_fd_sc_hd__nand2_2 ;
+    - _122_ sky130_fd_sc_hd__or2_4 ;
+    - _123_ sky130_fd_sc_hd__buf_6 ;
+    - _124_ sky130_fd_sc_hd__inv_2 ;
+    - _125_ sky130_fd_sc_hd__nand2_2 ;
+    - _126_ sky130_fd_sc_hd__or2_4 ;
+    - _127_ sky130_fd_sc_hd__buf_6 ;
+    - _128_ sky130_fd_sc_hd__inv_2 ;
+    - _129_ sky130_fd_sc_hd__nand2_2 ;
+    - _130_ sky130_fd_sc_hd__or2_4 ;
+    - _131_ sky130_fd_sc_hd__buf_6 ;
+    - _132_ sky130_fd_sc_hd__inv_2 ;
+    - _133_ sky130_fd_sc_hd__nand2_2 ;
+    - _134_ sky130_fd_sc_hd__or2_4 ;
+    - _135_ sky130_fd_sc_hd__buf_6 ;
+    - _136_ sky130_fd_sc_hd__inv_2 ;
+    - _137_ sky130_fd_sc_hd__nand2_2 ;
+    - _138_ sky130_fd_sc_hd__or2_4 ;
+    - _139_ sky130_fd_sc_hd__buf_6 ;
+    - _140_ sky130_fd_sc_hd__inv_2 ;
+    - _141_ sky130_fd_sc_hd__nand2_2 ;
+    - _142_ sky130_fd_sc_hd__or2_4 ;
+    - _143_ sky130_fd_sc_hd__buf_6 ;
+    - _144_ sky130_fd_sc_hd__inv_2 ;
+    - _145_ sky130_fd_sc_hd__nand2_2 ;
+    - _146_ sky130_fd_sc_hd__or2_2 ;
+    - _147_ sky130_fd_sc_hd__buf_2 ;
+    - _148_ sky130_fd_sc_hd__inv_2 ;
+    - _149_ sky130_fd_sc_hd__nand2_2 ;
+    - _150_ sky130_fd_sc_hd__or2_2 ;
+    - _151_ sky130_fd_sc_hd__buf_2 ;
+    - _152_ sky130_fd_sc_hd__inv_2 ;
+    - _153_ sky130_fd_sc_hd__nand2_2 ;
+    - _154_ sky130_fd_sc_hd__or2_2 ;
+    - _155_ sky130_fd_sc_hd__buf_2 ;
+    - _156_ sky130_fd_sc_hd__inv_2 ;
+    - _157_ sky130_fd_sc_hd__nand2_2 ;
+    - _158_ sky130_fd_sc_hd__inv_2 ;
+    - _159_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _160_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _161_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _162_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _163_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _164_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _165_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _166_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _167_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _168_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _169_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _170_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _171_ sky130_fd_sc_hd__dfbbn_2 ;
+    - _172_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _173_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _174_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _175_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _176_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _177_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _178_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _179_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _180_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _181_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _182_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _183_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _184_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _185_ sky130_fd_sc_hd__dfrtp_2 ;
+    - _186_ sky130_fd_sc_hd__buf_2 ;
+    - _187_ sky130_fd_sc_hd__buf_2 ;
+    - _188_ sky130_fd_sc_hd__buf_2 ;
+    - _189_ sky130_fd_sc_hd__ebufn_2 ;
+    - const_source sky130_fd_sc_hd__conb_1 ;
+    - gpio_in_buf sky130_fd_sc_hd__einvp_8 ;
+    - gpio_logic_high gpio_logic_high + FIXED ( 5980 8400 ) N ;
+END COMPONENTS
+PINS 43 ;
+    - gpio_defaults[0] + NET gpio_defaults[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 4830 83000 ) N ;
+    - gpio_defaults[10] + NET gpio_defaults[10] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 27830 83000 ) N ;
+    - gpio_defaults[11] + NET gpio_defaults[11] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 30130 83000 ) N ;
+    - gpio_defaults[12] + NET gpio_defaults[12] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 32430 83000 ) N ;
+    - gpio_defaults[1] + NET gpio_defaults[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 7130 83000 ) N ;
+    - gpio_defaults[2] + NET gpio_defaults[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 9430 83000 ) N ;
+    - gpio_defaults[3] + NET gpio_defaults[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 11730 83000 ) N ;
+    - gpio_defaults[4] + NET gpio_defaults[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 14030 83000 ) N ;
+    - gpio_defaults[5] + NET gpio_defaults[5] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 16330 83000 ) N ;
+    - gpio_defaults[6] + NET gpio_defaults[6] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 18630 83000 ) N ;
+    - gpio_defaults[7] + NET gpio_defaults[7] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 20930 83000 ) N ;
+    - gpio_defaults[8] + NET gpio_defaults[8] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 23230 83000 ) N ;
+    - gpio_defaults[9] + NET gpio_defaults[9] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 25530 83000 ) N ;
+    - mgmt_gpio_in + NET mgmt_gpio_in + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 24820 ) N ;
+    - mgmt_gpio_oeb + NET mgmt_gpio_oeb + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 28900 ) N ;
+    - mgmt_gpio_out + NET mgmt_gpio_out + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 30940 ) N ;
+    - one + NET one + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 26860 ) N ;
+    - pad_gpio_ana_en + NET pad_gpio_ana_en + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 32980 ) N ;
+    - pad_gpio_ana_pol + NET pad_gpio_ana_pol + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 35020 ) N ;
+    - pad_gpio_ana_sel + NET pad_gpio_ana_sel + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 37060 ) N ;
+    - pad_gpio_dm[0] + NET pad_gpio_dm[0] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 39100 ) N ;
+    - pad_gpio_dm[1] + NET pad_gpio_dm[1] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 41140 ) N ;
+    - pad_gpio_dm[2] + NET pad_gpio_dm[2] + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 43180 ) N ;
+    - pad_gpio_holdover + NET pad_gpio_holdover + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 45220 ) N ;
+    - pad_gpio_ib_mode_sel + NET pad_gpio_ib_mode_sel + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 47260 ) N ;
+    - pad_gpio_in + NET pad_gpio_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 49300 ) N ;
+    - pad_gpio_inenb + NET pad_gpio_inenb + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 51340 ) N ;
+    - pad_gpio_out + NET pad_gpio_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 53380 ) N ;
+    - pad_gpio_outenb + NET pad_gpio_outenb + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 55420 ) N ;
+    - pad_gpio_slow_sel + NET pad_gpio_slow_sel + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 57460 ) N ;
+    - pad_gpio_vtrip_sel + NET pad_gpio_vtrip_sel + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 59500 ) N ;
+    - resetn + NET resetn + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 61540 ) N ;
+    - resetn_out + NET resetn_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 63580 ) N ;
+    - serial_clock + NET serial_clock + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 65620 ) N ;
+    - serial_clock_out + NET serial_clock_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 67660 ) N ;
+    - serial_data_in + NET serial_data_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 69700 ) N ;
+    - serial_data_out + NET serial_data_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 71740 ) N ;
+    - serial_load + NET serial_load + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 73780 ) N ;
+    - serial_load_out + NET serial_load_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 75820 ) N ;
+    - user_gpio_in + NET user_gpio_in + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 77860 ) N ;
+    - user_gpio_oeb + NET user_gpio_oeb + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 79900 ) N ;
+    - user_gpio_out + NET user_gpio_out + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 81940 ) N ;
+    - zero + NET zero + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -50000 -300 ) ( 50000 300 )
+        + PLACED ( 120000 22780 ) N ;
+END PINS
+NETS 144 ;
+    - _000_ ( _166_ Q_N ) ( _092_ A ) + USE SIGNAL ;
+    - _001_ ( gpio_in_buf A ) ( _101_ Y ) + USE SIGNAL ;
+    - _002_ ( _159_ RESET_B ) ( _104_ X ) + USE SIGNAL ;
+    - _003_ ( _159_ SET_B ) ( _109_ Y ) + USE SIGNAL ;
+    - _004_ ( _160_ RESET_B ) ( _111_ X ) + USE SIGNAL ;
+    - _005_ ( _160_ SET_B ) ( _113_ Y ) + USE SIGNAL ;
+    - _006_ ( _161_ RESET_B ) ( _115_ X ) + USE SIGNAL ;
+    - _007_ ( _161_ SET_B ) ( _117_ Y ) + USE SIGNAL ;
+    - _008_ ( _162_ RESET_B ) ( _119_ X ) + USE SIGNAL ;
+    - _009_ ( _162_ SET_B ) ( _121_ Y ) + USE SIGNAL ;
+    - _010_ ( _163_ RESET_B ) ( _123_ X ) + USE SIGNAL ;
+    - _011_ ( _163_ SET_B ) ( _125_ Y ) + USE SIGNAL ;
+    - _012_ ( _164_ RESET_B ) ( _127_ X ) + USE SIGNAL ;
+    - _013_ ( _164_ SET_B ) ( _129_ Y ) + USE SIGNAL ;
+    - _014_ ( _165_ RESET_B ) ( _131_ X ) + USE SIGNAL ;
+    - _015_ ( _165_ SET_B ) ( _133_ Y ) + USE SIGNAL ;
+    - _016_ ( _166_ RESET_B ) ( _135_ X ) + USE SIGNAL ;
+    - _017_ ( _166_ SET_B ) ( _137_ Y ) + USE SIGNAL ;
+    - _018_ ( _167_ RESET_B ) ( _139_ X ) + USE SIGNAL ;
+    - _019_ ( _167_ SET_B ) ( _141_ Y ) + USE SIGNAL ;
+    - _020_ ( _168_ RESET_B ) ( _143_ X ) + USE SIGNAL ;
+    - _021_ ( _168_ SET_B ) ( _145_ Y ) + USE SIGNAL ;
+    - _022_ ( _169_ RESET_B ) ( _147_ X ) + USE SIGNAL ;
+    - _023_ ( _169_ SET_B ) ( _149_ Y ) + USE SIGNAL ;
+    - _024_ ( _170_ RESET_B ) ( _151_ X ) + USE SIGNAL ;
+    - _025_ ( _170_ SET_B ) ( _153_ Y ) + USE SIGNAL ;
+    - _026_ ( _171_ RESET_B ) ( _155_ X ) + USE SIGNAL ;
+    - _027_ ( _171_ SET_B ) ( _157_ Y ) + USE SIGNAL ;
+    - _028_ ( _159_ CLK_N ) ( _106_ Y ) + USE SIGNAL ;
+    - _029_ ( _160_ CLK_N ) ( _112_ Y ) + USE SIGNAL ;
+    - _030_ ( _161_ CLK_N ) ( _116_ Y ) + USE SIGNAL ;
+    - _031_ ( _162_ CLK_N ) ( _120_ Y ) + USE SIGNAL ;
+    - _032_ ( _163_ CLK_N ) ( _124_ Y ) + USE SIGNAL ;
+    - _033_ ( _164_ CLK_N ) ( _128_ Y ) + USE SIGNAL ;
+    - _034_ ( _165_ CLK_N ) ( _132_ Y ) + USE SIGNAL ;
+    - _035_ ( _166_ CLK_N ) ( _136_ Y ) + USE SIGNAL ;
+    - _036_ ( _167_ CLK_N ) ( _140_ Y ) + USE SIGNAL ;
+    - _037_ ( _168_ CLK_N ) ( _144_ Y ) + USE SIGNAL ;
+    - _038_ ( _169_ CLK_N ) ( _148_ Y ) + USE SIGNAL ;
+    - _039_ ( _170_ CLK_N ) ( _152_ Y ) + USE SIGNAL ;
+    - _040_ ( _171_ CLK_N ) ( _156_ Y ) + USE SIGNAL ;
+    - _041_ ( _185_ CLK ) ( _158_ Y ) + USE SIGNAL ;
+    - _042_ ( _115_ A ) ( _114_ X ) + USE SIGNAL ;
+    - _043_ ( _119_ A ) ( _118_ X ) + USE SIGNAL ;
+    - _044_ ( _123_ A ) ( _122_ X ) + USE SIGNAL ;
+    - _045_ ( _127_ A ) ( _126_ X ) + USE SIGNAL ;
+    - _046_ ( _131_ A ) ( _130_ X ) + USE SIGNAL ;
+    - _047_ ( _135_ A ) ( _134_ X ) + USE SIGNAL ;
+    - _048_ ( _139_ A ) ( _138_ X ) + USE SIGNAL ;
+    - _049_ ( _143_ A ) ( _142_ X ) + USE SIGNAL ;
+    - _050_ ( _147_ A ) ( _146_ X ) + USE SIGNAL ;
+    - _051_ ( _151_ A ) ( _150_ X ) + USE SIGNAL ;
+    - _052_ ( _155_ A ) ( _154_ X ) + USE SIGNAL ;
+    - _053_ ( _086_ A ) ( _085_ X ) + USE SIGNAL ;
+    - _054_ ( _099_ A ) ( _089_ A2 ) ( _087_ Y ) + USE SIGNAL ;
+    - _055_ ( _089_ B1 ) ( _088_ X ) + USE SIGNAL ;
+    - _056_ ( _091_ B ) ( _090_ Y ) + USE SIGNAL ;
+    - _057_ ( _093_ A ) ( _091_ Y ) + USE SIGNAL ;
+    - _058_ ( _093_ B ) ( _092_ Y ) + USE SIGNAL ;
+    - _059_ ( _098_ A ) ( _093_ Y ) + USE SIGNAL ;
+    - _060_ ( _095_ A ) ( _094_ Y ) + USE SIGNAL ;
+    - _061_ ( _097_ A ) ( _095_ Y ) + USE SIGNAL ;
+    - _062_ ( _097_ B ) ( _096_ Y ) + USE SIGNAL ;
+    - _063_ ( _098_ B ) ( _097_ Y ) + USE SIGNAL ;
+    - _064_ ( _100_ A ) ( _098_ Y ) + USE SIGNAL ;
+    - _065_ ( _100_ B ) ( _099_ Y ) + USE SIGNAL ;
+    - _066_ ( _142_ A ) ( _138_ A ) ( _134_ A ) ( _130_ A ) ( _126_ A ) ( _122_ A ) ( _118_ A )
+      ( _114_ A ) ( _110_ A ) ( _103_ A ) ( _102_ X ) + USE SIGNAL ;
+    - _067_ ( _104_ A ) ( _103_ X ) + USE SIGNAL ;
+    - _068_ ( _144_ A ) ( _140_ A ) ( _136_ A ) ( _132_ A ) ( _128_ A ) ( _124_ A ) ( _120_ A )
+      ( _116_ A ) ( _112_ A ) ( _106_ A ) ( _105_ X ) + USE SIGNAL ;
+    - _069_ ( _157_ A ) ( _153_ A ) ( _149_ A ) ( _108_ A ) ( _107_ Y ) + USE SIGNAL ;
+    - _070_ ( _145_ A ) ( _141_ A ) ( _137_ A ) ( _133_ A ) ( _129_ A ) ( _125_ A ) ( _121_ A )
+      ( _117_ A ) ( _113_ A ) ( _109_ A ) ( _108_ X ) + USE SIGNAL ;
+    - _071_ ( _111_ A ) ( _110_ X ) + USE SIGNAL ;
+    - _072_ ( _189_ TE_B ) ( _086_ X ) + USE SIGNAL ;
+    - _073_ ( _170_ Q_N ) + USE SIGNAL ;
+    - _074_ ( _169_ Q_N ) + USE SIGNAL ;
+    - _075_ ( _168_ Q_N ) + USE SIGNAL ;
+    - _076_ ( _167_ Q_N ) + USE SIGNAL ;
+    - _077_ ( _165_ Q_N ) + USE SIGNAL ;
+    - _078_ ( _164_ Q_N ) + USE SIGNAL ;
+    - _079_ ( _163_ Q_N ) + USE SIGNAL ;
+    - _080_ ( _162_ Q_N ) + USE SIGNAL ;
+    - _081_ ( _161_ Q_N ) + USE SIGNAL ;
+    - _082_ ( _160_ Q_N ) + USE SIGNAL ;
+    - _083_ ( _159_ Q_N ) + USE SIGNAL ;
+    - _084_ ( _171_ Q_N ) + USE SIGNAL ;
+    - gpio_defaults[0] ( PIN gpio_defaults[0] ) ( _109_ B ) ( _103_ B ) + USE SIGNAL ;
+    - gpio_defaults[10] ( PIN gpio_defaults[10] ) ( _137_ B ) ( _134_ B ) + USE SIGNAL ;
+    - gpio_defaults[11] ( PIN gpio_defaults[11] ) ( _141_ B ) ( _138_ B ) + USE SIGNAL ;
+    - gpio_defaults[12] ( PIN gpio_defaults[12] ) ( _145_ B ) ( _142_ B ) + USE SIGNAL ;
+    - gpio_defaults[1] ( PIN gpio_defaults[1] ) ( _133_ B ) ( _130_ B ) + USE SIGNAL ;
+    - gpio_defaults[2] ( PIN gpio_defaults[2] ) ( _113_ B ) ( _110_ B ) + USE SIGNAL ;
+    - gpio_defaults[3] ( PIN gpio_defaults[3] ) ( _125_ B ) ( _122_ B ) + USE SIGNAL ;
+    - gpio_defaults[4] ( PIN gpio_defaults[4] ) ( _129_ B ) ( _126_ B ) + USE SIGNAL ;
+    - gpio_defaults[5] ( PIN gpio_defaults[5] ) ( _149_ B ) ( _146_ B ) + USE SIGNAL ;
+    - gpio_defaults[6] ( PIN gpio_defaults[6] ) ( _153_ B ) ( _150_ B ) + USE SIGNAL ;
+    - gpio_defaults[7] ( PIN gpio_defaults[7] ) ( _157_ B ) ( _154_ B ) + USE SIGNAL ;
+    - gpio_defaults[8] ( PIN gpio_defaults[8] ) ( _117_ B ) ( _114_ B ) + USE SIGNAL ;
+    - gpio_defaults[9] ( PIN gpio_defaults[9] ) ( _121_ B ) ( _118_ B ) + USE SIGNAL ;
+    - gpio_logic1 ( gpio_logic_high gpio_logic1 ) ( gpio_in_buf TE ) + USE SIGNAL ;
+    - gpio_outenb ( _165_ Q ) ( _088_ A ) ( _085_ B_N ) + USE SIGNAL ;
+    - mgmt_ena ( _159_ Q ) ( _098_ C ) ( _088_ C ) ( _087_ A ) + USE SIGNAL ;
+    - mgmt_gpio_in ( PIN mgmt_gpio_in ) ( _189_ Z ) + USE SIGNAL ;
+    - mgmt_gpio_oeb ( PIN mgmt_gpio_oeb ) ( _095_ B ) ( _090_ A ) ( _088_ B ) + USE SIGNAL ;
+    - mgmt_gpio_out ( PIN mgmt_gpio_out ) ( _096_ A ) + USE SIGNAL ;
+    - one ( PIN one ) ( const_source HI ) + USE SIGNAL ;
+    - pad_gpio_ana_en ( PIN pad_gpio_ana_en ) ( _169_ Q ) + USE SIGNAL ;
+    - pad_gpio_ana_pol ( PIN pad_gpio_ana_pol ) ( _171_ Q ) + USE SIGNAL ;
+    - pad_gpio_ana_sel ( PIN pad_gpio_ana_sel ) ( _170_ Q ) + USE SIGNAL ;
+    - pad_gpio_dm[0] ( PIN pad_gpio_dm[0] ) ( _166_ Q ) + USE SIGNAL ;
+    - pad_gpio_dm[1] ( PIN pad_gpio_dm[1] ) ( _167_ Q ) ( _095_ C ) ( _090_ B ) + USE SIGNAL ;
+    - pad_gpio_dm[2] ( PIN pad_gpio_dm[2] ) ( _168_ Q ) ( _094_ A ) ( _091_ A ) + USE SIGNAL ;
+    - pad_gpio_holdover ( PIN pad_gpio_holdover ) ( _160_ Q ) + USE SIGNAL ;
+    - pad_gpio_ib_mode_sel ( PIN pad_gpio_ib_mode_sel ) ( _164_ Q ) + USE SIGNAL ;
+    - pad_gpio_in ( PIN pad_gpio_in ) ( _189_ A ) ( _101_ A ) + USE SIGNAL ;
+    - pad_gpio_inenb ( PIN pad_gpio_inenb ) ( _163_ Q ) ( _085_ A ) + USE SIGNAL ;
+    - pad_gpio_out ( PIN pad_gpio_out ) ( _100_ Y ) + USE SIGNAL ;
+    - pad_gpio_outenb ( PIN pad_gpio_outenb ) ( _089_ X ) + USE SIGNAL ;
+    - pad_gpio_slow_sel ( PIN pad_gpio_slow_sel ) ( _161_ Q ) + USE SIGNAL ;
+    - pad_gpio_vtrip_sel ( PIN pad_gpio_vtrip_sel ) ( _162_ Q ) + USE SIGNAL ;
+    - resetn ( PIN resetn ) ( _186_ A ) ( _185_ RESET_B ) ( _184_ RESET_B ) ( _183_ RESET_B ) ( _182_ RESET_B ) ( _181_ RESET_B )
+      ( _180_ RESET_B ) ( _179_ RESET_B ) ( _178_ RESET_B ) ( _177_ RESET_B ) ( _176_ RESET_B ) ( _175_ RESET_B ) ( _174_ RESET_B ) ( _173_ RESET_B )
+      ( _172_ RESET_B ) ( _154_ A ) ( _150_ A ) ( _146_ A ) ( _107_ A ) ( _102_ A ) + USE SIGNAL ;
+    - resetn_out ( PIN resetn_out ) ( _186_ X ) + USE SIGNAL ;
+    - serial_clock ( PIN serial_clock ) ( _187_ A ) ( _184_ CLK ) ( _183_ CLK ) ( _182_ CLK ) ( _181_ CLK ) ( _180_ CLK )
+      ( _179_ CLK ) ( _178_ CLK ) ( _177_ CLK ) ( _176_ CLK ) ( _175_ CLK ) ( _174_ CLK ) ( _173_ CLK ) ( _172_ CLK )
+      ( _158_ A ) + USE SIGNAL ;
+    - serial_clock_out ( PIN serial_clock_out ) ( _187_ X ) + USE SIGNAL ;
+    - serial_data_in ( PIN serial_data_in ) ( _172_ D ) + USE SIGNAL ;
+    - serial_data_out ( PIN serial_data_out ) ( _185_ Q ) + USE SIGNAL ;
+    - serial_load ( PIN serial_load ) ( _188_ A ) ( _156_ A ) ( _152_ A ) ( _148_ A ) ( _105_ A ) + USE SIGNAL ;
+    - serial_load_out ( PIN serial_load_out ) ( _188_ X ) + USE SIGNAL ;
+    - shift_register\[0\] ( _173_ D ) ( _172_ Q ) ( _159_ D ) + USE SIGNAL ;
+    - shift_register\[10\] ( _183_ D ) ( _182_ Q ) ( _166_ D ) + USE SIGNAL ;
+    - shift_register\[11\] ( _184_ D ) ( _183_ Q ) ( _167_ D ) + USE SIGNAL ;
+    - shift_register\[12\] ( _185_ D ) ( _184_ Q ) ( _168_ D ) + USE SIGNAL ;
+    - shift_register\[1\] ( _174_ D ) ( _173_ Q ) ( _165_ D ) + USE SIGNAL ;
+    - shift_register\[2\] ( _175_ D ) ( _174_ Q ) ( _160_ D ) + USE SIGNAL ;
+    - shift_register\[3\] ( _176_ D ) ( _175_ Q ) ( _163_ D ) + USE SIGNAL ;
+    - shift_register\[4\] ( _177_ D ) ( _176_ Q ) ( _164_ D ) + USE SIGNAL ;
+    - shift_register\[5\] ( _178_ D ) ( _177_ Q ) ( _169_ D ) + USE SIGNAL ;
+    - shift_register\[6\] ( _179_ D ) ( _178_ Q ) ( _170_ D ) + USE SIGNAL ;
+    - shift_register\[7\] ( _180_ D ) ( _179_ Q ) ( _171_ D ) + USE SIGNAL ;
+    - shift_register\[8\] ( _181_ D ) ( _180_ Q ) ( _161_ D ) + USE SIGNAL ;
+    - shift_register\[9\] ( _182_ D ) ( _181_ Q ) ( _162_ D ) + USE SIGNAL ;
+    - user_gpio_in ( PIN user_gpio_in ) ( gpio_in_buf Z ) + USE SIGNAL ;
+    - user_gpio_oeb ( PIN user_gpio_oeb ) ( _089_ A1 ) + USE SIGNAL ;
+    - user_gpio_out ( PIN user_gpio_out ) ( _099_ B ) + USE SIGNAL ;
+    - zero ( PIN zero ) ( const_source LO ) + USE SIGNAL ;
+END NETS
+END DESIGN

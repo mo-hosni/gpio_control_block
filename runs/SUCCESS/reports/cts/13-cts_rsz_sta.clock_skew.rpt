@@ -1,0 +1,17 @@
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock serial_clock
+Latency      CRPR       Skew
+_174_/CLK ^
+   0.34
+_175_/CLK ^
+   0.30     -0.02       0.02
+
+Clock serial_load
+No launch/capture paths found.
+
+Clock v_clock
+No launch/capture paths found.
+
