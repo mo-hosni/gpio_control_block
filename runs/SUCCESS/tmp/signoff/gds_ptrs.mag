@@ -1,6 +1,0 @@
-<< properties >>
-string FIXED_BBOX 0 0 34000 17000
-string GDS_END 686962
-string GDS_FILE /openlane/designs/gpio_control_block/runs/RUN_27/results/signoff/gpio_control_block.magic.gds
-string GDS_START 185666
-<< end >>
