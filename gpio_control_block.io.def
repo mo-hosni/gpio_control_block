@@ -303,123 +303,123 @@ PINS 43 ;
     - mgmt_gpio_in + NET mgmt_gpio_in + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 24820 ) N ;
+        + PLACED ( 120000 24420 ) N ;
     - mgmt_gpio_oeb + NET mgmt_gpio_oeb + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 28900 ) N ;
+        + PLACED ( 120000 28500 ) N ;
     - mgmt_gpio_out + NET mgmt_gpio_out + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 30940 ) N ;
+        + PLACED ( 120000 30540 ) N ;
     - one + NET one + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 26860 ) N ;
+        + PLACED ( 120000 26460 ) N ;
     - pad_gpio_ana_en + NET pad_gpio_ana_en + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 32980 ) N ;
+        + PLACED ( 120000 32580 ) N ;
     - pad_gpio_ana_pol + NET pad_gpio_ana_pol + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 35020 ) N ;
+        + PLACED ( 120000 34620 ) N ;
     - pad_gpio_ana_sel + NET pad_gpio_ana_sel + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 37060 ) N ;
+        + PLACED ( 120000 36660 ) N ;
     - pad_gpio_dm[0] + NET pad_gpio_dm[0] + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 39100 ) N ;
+        + PLACED ( 120000 38700 ) N ;
     - pad_gpio_dm[1] + NET pad_gpio_dm[1] + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 41140 ) N ;
+        + PLACED ( 120000 40740 ) N ;
     - pad_gpio_dm[2] + NET pad_gpio_dm[2] + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 43180 ) N ;
+        + PLACED ( 120000 42780 ) N ;
     - pad_gpio_holdover + NET pad_gpio_holdover + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 45220 ) N ;
+        + PLACED ( 120000 44820 ) N ;
     - pad_gpio_ib_mode_sel + NET pad_gpio_ib_mode_sel + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 47260 ) N ;
+        + PLACED ( 120000 46860 ) N ;
     - pad_gpio_in + NET pad_gpio_in + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 49300 ) N ;
+        + PLACED ( 120000 48900 ) N ;
     - pad_gpio_inenb + NET pad_gpio_inenb + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 51340 ) N ;
+        + PLACED ( 120000 50940 ) N ;
     - pad_gpio_out + NET pad_gpio_out + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 53380 ) N ;
+        + PLACED ( 120000 52980 ) N ;
     - pad_gpio_outenb + NET pad_gpio_outenb + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 55420 ) N ;
+        + PLACED ( 120000 55020 ) N ;
     - pad_gpio_slow_sel + NET pad_gpio_slow_sel + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 57460 ) N ;
+        + PLACED ( 120000 57060 ) N ;
     - pad_gpio_vtrip_sel + NET pad_gpio_vtrip_sel + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 59500 ) N ;
+        + PLACED ( 120000 59100 ) N ;
     - resetn + NET resetn + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 61540 ) N ;
+        + PLACED ( 120000 61140 ) N ;
     - resetn_out + NET resetn_out + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 63580 ) N ;
+        + PLACED ( 120000 63180 ) N ;
     - serial_clock + NET serial_clock + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 65620 ) N ;
+        + PLACED ( 120000 65220 ) N ;
     - serial_clock_out + NET serial_clock_out + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 67660 ) N ;
+        + PLACED ( 120000 67260 ) N ;
     - serial_data_in + NET serial_data_in + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 69700 ) N ;
+        + PLACED ( 120000 69300 ) N ;
     - serial_data_out + NET serial_data_out + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 71740 ) N ;
+        + PLACED ( 120000 71340 ) N ;
     - serial_load + NET serial_load + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 73780 ) N ;
+        + PLACED ( 120000 73380 ) N ;
     - serial_load_out + NET serial_load_out + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 75820 ) N ;
+        + PLACED ( 120000 75420 ) N ;
     - user_gpio_in + NET user_gpio_in + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 77860 ) N ;
+        + PLACED ( 120000 77460 ) N ;
     - user_gpio_oeb + NET user_gpio_oeb + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 79900 ) N ;
+        + PLACED ( 120000 79500 ) N ;
     - user_gpio_out + NET user_gpio_out + DIRECTION INPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 81940 ) N ;
+        + PLACED ( 120000 81540 ) N ;
     - zero + NET zero + DIRECTION OUTPUT + USE SIGNAL
       + PORT
         + LAYER met3 ( -50000 -300 ) ( 50000 300 )
-        + PLACED ( 120000 22780 ) N ;
+        + PLACED ( 120000 22380 ) N ;
 END PINS
 NETS 144 ;
     - _000_ ( _166_ Q_N ) ( _092_ A ) + USE SIGNAL ;

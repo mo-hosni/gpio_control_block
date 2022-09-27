@@ -50,7 +50,6 @@ set ::env(FP_IO_HLENGTH) 100
 set ::env(FP_IO_VLENGTH) 4
 
 set ::env(RIGHT_MARGIN_MULT) 262
-# set ::env(RIGHT_MARGIN_MULT) 262
 set ::env(LEFT_MARGIN_MULT) 10
 set ::env(TOP_MARGIN_MULT) 2
 set ::env(BOTTOM_MARGIN_MULT) 2
@@ -58,7 +57,6 @@ set ::env(BOTTOM_MARGIN_MULT) 2
 set ::env(CELL_PAD) 0
 
 ## PDN
-# set ::env(PDN_CFG) [glob $::env(DESIGN_DIR)/pdn.tcl] 
 set ::env(FP_PDN_AUTO_ADJUST) 0
 
 set ::env(FP_PDN_VWIDTH) 1.6
@@ -76,10 +74,12 @@ set ::env(FP_PDN_VPITCH) 25
 set ::env(FP_PDN_VSPACING) 3.4
 set ::env(FP_PDN_HSPACING) 3.4
 
-set ::env(FP_PDN_MACRO_HOOKS) "gpio_logic_high vccd1 vssd1 vccd1 vssd1"
+set ::env(FP_PDN_CHECK_NODES) 0
+
+# set ::env(FP_PDN_MACRO_HOOKS) "gpio_logic_high vccd1 vssd1 vccd1 vssd1"
 
 ## Placement 
-set ::env(PL_TARGET_DENSITY) 0.75
+set ::env(PL_TARGET_DENSITY) 0.74
 # for some reason resizer is leaving a floating net after running repair_tie_fanout command
 set ::env(PL_RESIZER_REPAIR_TIE_FANOUT) 0
 set ::env(PL_RESIZER_MAX_SLEW_MARGIN) 80
