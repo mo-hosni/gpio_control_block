@@ -38,7 +38,7 @@ set ::env(SYNTH_STRATEGY) "AREA 3"
 set ::env(SYNTH_MAX_TRAN) {1}
 set ::env(FP_CORE_UTIL) {10}
 ## Floorplan
-set ::env(FP_DEF_TEMPLATE) [glob $::env(DESIGN_DIR)/gpio_control_block_20_.io.def]
+set ::env(FP_DEF_TEMPLATE) [glob $::env(DESIGN_DIR)/gpio_control_block.io.def]
 set ::env(FP_SIZING) absolute
 # set ::env(DIE_AREA) "0 0 170 65" 
 set ::env(DIE_AREA) "0 0 170 85" 
